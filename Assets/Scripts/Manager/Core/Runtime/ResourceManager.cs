@@ -81,7 +81,7 @@ namespace Manager.Core
             
             Object.Destroy(go);
         }
-        
+
     }
 
 }

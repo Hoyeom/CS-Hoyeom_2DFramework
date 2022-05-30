@@ -23,5 +23,20 @@
             None,
             CharacterStatus,
         }
+        
+        public enum Theme
+        {
+            None,
+            
+        }
+        
+        public enum TileType
+        {
+            None,
+            Background,
+            Object,
+        }
+        
+        
     }
 }

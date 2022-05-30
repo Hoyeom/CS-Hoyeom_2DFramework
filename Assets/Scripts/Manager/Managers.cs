@@ -1,4 +1,5 @@
 using System;
+using Manager.Contents;
 using Manager.Core;
 using UnityEngine;
 using Utils;
@@ -16,6 +17,13 @@ public class Managers : MonoBehaviour
         }
     }
 
+    #region Contents
+
+    private MapManager _map = new MapManager();
+    public static MapManager Map => Instance._map;
+
+    #endregion
+    
     private static readonly string NAME = "@Managers";
 
     private ResourceManager _resource = new ResourceManager();
@@ -56,6 +64,7 @@ public class Managers : MonoBehaviour
     {
         _instance._audio.Initialize();
         _instance._data.Initialize();
+        _instance._map.Initialize();
         _instance._pool.Initialize();
     }
     
@@ -64,6 +73,7 @@ public class Managers : MonoBehaviour
         Pool.Clear();
         Audio.Clear();
         UI.Clear();
+        Map.Clear();
         Scene.Clear();
     }
 

@@ -16,8 +16,6 @@ namespace Manager.Core
         
         private static readonly string Format = ".csv";
 
-        private static readonly string VariantName = "sOData";
-        
         [MenuItem("Parser/LoadChatacterStat")]
         private static void LoadStat()
         {
